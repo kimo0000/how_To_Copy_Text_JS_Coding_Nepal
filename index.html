@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How To copy text JS Coding Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="code code_HTML">
+        <h3>HTML CODE:</h3>
+        <textarea readonly>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, dolores culpa illo cum explicabo, aut amet non recusandae quaerat qui nemo consequuntur eos impedit, pariatur nam dicta asperiores iure quod.
+                Voluptas ipsum nam quae nostrum repellendus maxime aspernatur deleniti ullam, ratione, distinctio aperiam temporibus accusantium perspiciatis exercitationem sit ipsam dignissimos recusandae ab? Cupiditate odit natus obcaecati voluptas aspernatur deserunt nesciunt.
+                Eveniet sit odit non totam rerum amet laborum. Sed optio animi dicta non tenetur quos aliquid deleniti maxime dolorum fuga, ea ab aut, vel excepturi ratione molestias? Quidem, sapiente blanditiis!
+                Blanditiis voluptatum quis rerum iste eligendi velit, nostrum ducimus, cum voluptate quod adipisci consequuntur, facilis praesentium. Iure nemo quo voluptate sit facere enim rem ab omnis. A veritatis fugit accusantium?
+                Cumque omnis minus explicabo perferendis, ex facilis fugit nostrum sunt, sit aliquam officiis nobis voluptatem dignissimos nisi maiores. Porro ipsa sit ab voluptatibus quam tempora doloribus molestias! Minus, fugit consequatur!
+                Voluptatum, mollitia. Cupiditate fuga expedita veritatis molestiae. Alias nihil beatae incidunt repellendus minima dolores neque ipsam similique maxime. Enim delectus similique officia, placeat consequuntur voluptas molestias culpa. Molestias, magni! Molestias.
+                Eos, minima non voluptatibus dolor in expedita explicabo. Eos possimus, quas maiores libero tenetur ipsum id perferendis illo veniam ullam culpa fugiat eaque nihil quo. Quasi, similique porro. Quaerat, delectus.
+                Consequuntur quibusdam consequatur, esse ex aperiam maiores amet. Expedita eos vitae quam magni vero impedit corporis molestias nam, voluptatibus fugit, necessitatibus, maxime dolores! Eius ut adipisci eaque omnis assumenda saepe?
+                Sequi facilis, facere dolorem commodi tempora, numquam molestiae, sint eaque expedita a nesciunt fugit. Praesentium, illum ad. Est at saepe tenetur quod, impedit quam, sapiente, autem dicta voluptates facilis nesciunt?
+                Assumenda harum earum pariatur debitis facilis. Cupiditate, alias quam! Debitis commodi esse dicta, ducimus, dolor ullam assumenda laborum magni laboriosam pariatur sequi libero enim inventore sapiente, at expedita a id!
+            </textarea
+        >
+        <button class="copy_code_html">Copy Code</button>
+      </div>
+      <div class="code code_CSS">
+        <h3>CSS CODE:</h3>
+        <textarea readonly>
+            *, ::after, ::before{
+            padding: 0;
+            margin: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            }
+            html{
+            scroll-behavior: smooth;
+            }
+            body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(90deg, #fa45 25%, rgba(29, 50, 25, 0.5) 100%);
+            }
+            .wrapper{
+            width: 60%;
+            max-width: 650px;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 15px;
+            }
+            .code{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 0 15px;
+            }
+            .code:not(:last-child){
+            border-bottom: 1px solid #eee;
+            }
+            h3{
+            color: blueviolet;
+            }
+            textarea{
+            padding: 15px;
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            border: 2px solid blueviolet;
+            resize: none;
+            }
+            textarea::-webkit-scrollbar{
+            width: 0;
+            }
+            button{
+            width: fit-content;
+            padding: 10px 25px;
+            border-radius: 6px;
+            background-color: blueviolet;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            opacity: .5;
+            transition: .3s ease;
+            /* margin: 0 auto; */
+            }
+            button:hover{
+            opacity: 1;
+            }
+            </textarea
+        >
+        <button class="copy_code_css">Copy Code</button>
+      </div>
+      <div class="code code_JS">
+        <h3>JAVASCRIPT CODE:</h3>
+        <textarea readonly>
+            const btns = document.querySelectorAll('.code button');
+            
+            const copyCode = (e) => {
+            // console.log(e.target.className);
+            e.target.previousElementSibling.select();
+            
+            if (e.target.className == "copy_code_html") {
+            navigator.clipboard.writeText(e.target.previousElementSibling.value);
+            }
+            }
+            
+            btns.forEach(btn => {
+            btn.addEventListener('click', copyCode);
+            })
+            </textarea
+        >
+        <button class="copy_code_js">Copy Code</button>
+      </div>
+    </div>
+  </body>
+</html>
